@@ -1,0 +1,169 @@
+@import 'https://fonts.googleapis.com/css?family=Lato:400,700';
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #eee;
+    font-family: 'Lato', sans-serif;
+}
+
+#header{
+
+    background-color: #eee;
+    position: fixed;
+    top: 0;
+    min-height: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+#logo{
+    width: 60vw;
+}
+
+#logo img{
+    width: 100%;
+    max-width: 300px;
+    display: flexbox;
+}
+
+#nav-bar ul{
+    width: 35vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#nav-bar li{
+    flex-direction: initial;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+i{
+    justify-content: center;
+}
+main{
+    margin: auto;
+    max-width: 1000px;
+    display: flex;
+    align-items: center;
+    margin-top: 60px;
+    flex-direction: column;
+    padding: 25px;
+}
+
+.grid{
+    display: flex;
+}
+
+.grid h2{
+    font-size: 25px;
+}
+.grid p{
+    font-size: 17px
+}
+
+.informacion{
+    padding: 5px 0 0 50px;
+    max-width: 700px
+}
+
+.icon {
+    color: #f1890f;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    
+}
+
+
+
+
+section{
+    padding-bottom: 60px;
+
+}
+
+
+#how-it-works{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#how-it-works h2{
+    margin-bottom: 12px;
+}
+
+#email{
+    width: 100%;
+    max-width: 275px;
+    padding: 5px;
+}
+
+#submit{
+    font-weight: bold;
+    font-size: 17px;
+    background-color: #f1c40f;
+    border: none;
+    padding: 4px 18px;
+    margin: 15px 0px;
+}
+
+#features{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#video{
+    width: 100%;
+    max-width: 550px;
+}
+
+@media (max-width: 650px) {
+    header {
+      flex-wrap: wrap;
+
+    }
+    #logo{
+        margin-top: 15px;
+        width: 100%;
+        position: relative;
+    }
+    #logo img{
+        margin: 0 auto;
+    }
+    .icon{
+        display: none;
+    }
+
+    nav {
+        margin-top: 10px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 0 50px;
+      }
+    nav li {
+        padding-bottom: 5px;
+    }
+    main{
+        margin-top: 110px;
+    }
+
+  }

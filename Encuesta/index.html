@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Encuesta</title>
+</head>
+<body>
+    <main id="main">
+        <header>
+            <h1 id="title">Course survey</h1>
+            <p id="description">Thank you for taking the time to help us</p>
+        </header>
+        <form id="survey-form">
+            <div class="form-div">
+                <label for="name" id="name-label">Name</label>
+                <input 
+                    type="text"
+                    name="name"
+                    id="name"
+                    class="input-text"
+                    placeholder="Enter your name"
+                    required>
+            </div>
+            <div class="form-div">
+                <label for="email" id="email-label">Email</label>
+                <input 
+                    type="email" 
+                    name="email" 
+                    id="email"
+                    class="input-text"
+                    placeholder="Enter your email" 
+                    required>
+            </div>
+            <div class="form-div">
+                <label for="age" id="number-label">Age</label>
+                <input 
+                    type="number" 
+                    name="age" 
+                    id="number"
+                    class="input-text"
+                    placeholder="Enter your age">
+            </div>
+            <div class="form-div">
+                <p>Which option best describes your role?</p>
+                <select id="dropdown" name="role" class="input-text drop" required>
+                    <option disabled selected>Select current role</option>
+                    <option value="student">Student</option>
+                    <option value="job">Full time job</option>
+                    <option value="learner">Full time learner</option>
+                    <option value="preferno">Prefer not to say</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <div class="form-div">
+                <p>Would you recommend freeCodeCamp to a friend?</p>
+                <label>
+                    <input type="radio" name="radio" value="definitely">Definitely
+                </label>
+                <label>
+                    <input type="radio" name="radio" value="maybe">Maybe
+                </label>
+                <label>
+                    <input type="radio" name="radio" value="not-sure">Not Sure
+                </label>
+            </div>
+
+            <div class="form-div">
+                <p>Which courses do you like?</p>
+                <label>
+                    <input type="checkbox" value="front-end">Front-End
+                </label>
+                <label>
+                    <input type="checkbox" value="back-end">Back-End
+                </label>
+                <label>
+                    <input type="checkbox" value="data">Data Visualization
+                </label>
+            </div>
+
+            <div class="form-div">
+                <p>Any comments of suggestions?</p>
+                <textarea name="comments"  placeholder="Enter your comment here..."></textarea>
+            </div>
+
+            <div>
+                <button type="submit" id="submit">Submit</button>
+            </div>
+        </form>
+    </main>
+
+</body>
+</html>
