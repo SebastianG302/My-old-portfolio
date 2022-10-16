@@ -1,10 +1,13 @@
 :root {
 
-    --rich-black-fogra-29: #031926ff;
+    --rich-black-fogra-29: rgb(255, 255, 255);
     --metallic-seaweed: #468189ff;
     --green-sheen: #77aca2ff;
     --opal: #9dbebbff;
-    --champagne: rgb(255, 255, 255);
+    --champagne: rgb(32, 6, 6);
+
+
+    --azul-oscuro: #031926ff;
 
 
 }
@@ -41,11 +44,12 @@ li {
 
 a {
     text-decoration: none;
-    color: var(--champagne);
+    color: var(--azul-oscuro);
 }
 
 h1,
 h2 {
+    color: var(--azul-oscuro);
     font-size: 6rem;
     text-align: center;
     padding-left: 5px;
@@ -63,7 +67,7 @@ img {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: var(--metallic-seaweed);
+    background-color: var(--azul-oscuro);
     box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
 
 }
@@ -74,6 +78,7 @@ img {
 }
 
 .nav-list a {
+    color: var(--rich-black-fogra-29);
     display: block;
     padding: 2rem;
     font-size: 2.2rem;
@@ -96,7 +101,7 @@ img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: var(--rich-black-fogra-29);
+
     color: var(--champagne);
     width: 100%;
     min-width: 336px;
